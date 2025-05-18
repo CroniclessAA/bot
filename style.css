@@ -284,14 +284,6 @@ font-weight: 300;
 
 /* Contact */
 
-.formm {
-transform: scale(3.0);
-padding-top: 33%;
-padding-bottom: 32%;
-padding-left: 32%;
-padding-right: 5%;
-}
-
 #contact {
 min-height: 300px;
 width: 100%;
@@ -421,10 +413,13 @@ padding-right: 5%;
 }
 
 @media (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-    margin: auto;
-  }
+  .formm {
+transform: scale(3.0);
+padding-top: 33%;
+padding-bottom: 32%;
+padding-left: 32%;
+padding-right: 5%;
+}
 }
 
 .animasi-right{
