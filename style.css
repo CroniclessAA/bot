@@ -284,6 +284,12 @@ font-weight: 300;
 
 /* Contact */
 
+.formm {
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+}
+
 #contact {
 min-height: 300px;
 width: 100%;
@@ -403,24 +409,6 @@ border-color: #fff;
 /* Function */
 
 @media (max-width: 600px) {
-  .formm {
-transform: scale(1.0);
-padding-top: 33%;
-padding-bottom: 32%;
-padding-left: 32%;
-padding-right: 5%;
-}
-}
-
-@media (min-width: 1200px) {
-  .formm {
-transform: scale(3.0);
-padding-top: 33%;
-padding-bottom: 32%;
-padding-left: 32%;
-padding-right: 5%;
-}
-}
 
 .animasi-right{
 animation: glowInRight 2s ease-in-out;
