@@ -1,0 +1,168 @@
+:root {
+  --mainColor: #252734;
+  --secondaryColor: #333646;
+  --acsentColor: #17d1d3;
+}
+
+body {
+  background-color: var(--mainColor);
+  min-height: 900px;
+  margin: 0;
+}
+
+/* Navbar */
+
+.nav-link.active {
+  color: var(--acsentColor) !important;
+}
+
+/* End Navbar */
+
+/* Home */
+
+.color-acsent {
+  color: var(--acsentColor);
+}
+
+section h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+#home {
+  color: #fff;
+  min-height: 100vh;
+}
+
+#home h1 {
+  font-size: 3rem;
+}
+
+#home h2 {
+  font-weight: 300;
+}
+
+#hone p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.cv {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.social-icon svg {
+  margin-right: 7px;
+  margin-bottom: 10px;
+}
+
+/* End Home */
+
+/* Beranda */
+
+#beranda hr {
+  padding: 5%;
+  color: var(--acsentColor);
+  margin: 0 auto;
+  opacity: 100%;
+}
+
+
+#beranda {
+  min-height: 300px;
+  width: 100%;
+  background-color: var(--secondaryColor);
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+}
+
+/* End Beranda */
+
+
+/* Daftar-Gunung */
+
+daftarimg {
+  width: 705px;
+  height: 435;
+  
+}
+
+/* End Daftar-Gunung */
+
+/* Function */
+
+.detail{
+  min-height: 90vh;
+  item
+}
+
+.rgb-border {
+  display: inline-block;
+  padding: 6px;
+  border-radius: 12px;
+  background: linear-gradient(270deg, white, orange, violet, orange, white);
+  background-size: 800% 800%;
+  animation: rgbMove 10s linear infinite;
+}
+
+.rgb-border img {
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes rgbMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.gloww {
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+.glow span {
+  color: #000000;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff,
+    0 0 60px #fff;
+  display: inline-block;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: glowFadeIn 0.6s ease-out forwards;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes glowFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* End Function */
