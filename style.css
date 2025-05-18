@@ -7,10 +7,16 @@
 body {
   background-color: var(--mainColor);
   min-height: 900px;
+  display: flex;
+  flex-direction: column;
   margin: 0;
 }
 
 /* Navbar */
+
+.navbar{
+  position: fixed;
+}
 
 .nav-link.active {
   color: var(--acsentColor) !important;
@@ -30,6 +36,10 @@ section h1 {
 }
 
 #home {
+  background-image: url('../Img/noopp.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #fff;
   min-height: 100vh;
 }
@@ -42,7 +52,7 @@ section h1 {
   font-weight: 300;
 }
 
-#hone p {
+#home p {
   font-size: 1.1rem;
   font-weight: 300;
 }
@@ -62,8 +72,93 @@ section h1 {
 
 /* Beranda */
 
+#carouselExampleSlidesOnly {
+  max-width: 800px; 
+  margin: 40px auto; 
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  background: #f8f9fa;
+}
+
+/* Gambar carousel */
+#carouselExampleSlidesOnly img {
+  height: 450px; 
+  object-fit: cover; 
+  transition: transform 0.5s ease;
+}
+
+/* Hover efek zoom */
+#carouselExampleSlidesOnly img:hover {
+  transform: scale(1.05);
+}
+
+/* Caption container */
+.carousel-caption {
+  background: rgba(0,0,0,0.5);
+  padding: 10px 15px;
+  border-radius: 0 0 15px 15px;
+  bottom: 0;
+  text-align: left;
+}
+
+/* Caption judul */
+.carousel-caption h5 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+/* Caption deskripsi */
+.carousel-caption p {
+  font-size: 1rem;
+  color: #ddd;
+  margin: 0;
+}
+
+/* Responsive untuk layar kecil */
+@media (max-width: 768px) {
+  #carouselExampleSlidesOnly img {
+    height: 300px;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 1.1rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
+
+.weather-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  background: #252734;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.weather-icon {
+  text-align: center;
+}
+
+.weather-icon img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.weather-chart {
+  max-width: 500px;
+  width: 100%;
+}
+
 #beranda hr {
-  padding: 5%;
   color: var(--acsentColor);
   margin: 0 auto;
   opacity: 100%;
@@ -85,19 +180,247 @@ section h1 {
 
 /* Daftar-Gunung */
 
-daftarimg {
-  width: 705px;
-  height: 435;
-  
+.glass-modal {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.glass-content {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+}
+
+.glass-header {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: #222;
+}
+
+.glass-footer {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-card {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+
+.glass-img {
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.card-text {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.list-group-item {
+  background: rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+}
+
+.danger-status {
+  color: #d32f2f;
+}
+
+.glass-btn {
+  background-color: #ffffffaa;
+  backdrop-filter: blur(4px);
+  color: #000;
+  font-weight: 600;
+  border: 1px solid #ccc;
+}
+
+.glass-link {
+  color: #1976d2;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.glass-link:hover {
+  text-decoration: underline;
+}
+
+#daftar{
+  background-color: var(--mainColor);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  min-height: 100vh;
+  padding-bottom: 10%;
+}
+
+#daftar h1 {
+  font-size: 3rem;
+}
+
+#daftar h2 {
+  font-weight: 300;
+}
+
+#daftar p {
+  font-size: 1.1rem;
+  font-weight: 300;
 }
 
 /* End Daftar-Gunung */
 
+/* Contact */
+
+.formm {
+  transform: scale(3.0);
+  padding-top: 33%;
+  padding-bottom: 32%;
+  padding-left: 32%;
+  padding-right: 5%;
+}
+
+#contact {
+  min-height: 300px;
+  width: 100%;
+  background-color: var(--secondaryColor);
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+}
+
+.form-container {
+  width: 400px;
+  background: linear-gradient(#333646, #333646) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: #717171;
+  font-weight: 600;
+  width: 40%;
+  background: #313131;
+  border: 1px solid #fff;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+
+
+
+
+/* End Contact */
+
 /* Function */
 
+.animasi-right{
+  animation: glowInRight 2s ease-in-out;
+  transform-origin: right;
+}
+
+.animasi-left{
+  animation: glowInLeft 2s ease-in-out;
+  transform-origin: left;
+}
+
 .detail{
-  min-height: 90vh;
-  item
+  backdrop-filter: ;
 }
 
 .rgb-border {
@@ -124,11 +447,65 @@ daftarimg {
   }
 }
 
+.glow-text-right {
+  font-size: 2rem;
+  color: #fff;
+  animation: glowInRight 3s ease-in-out;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  display: inline-block;
+  transform-origin: right;
+}
+
+@keyframes glowInRight {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateX(30px);
+    text-shadow: none;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05) translateX(0);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff;
+  }
+}
+
 .gloww {
   color: white;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
     0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+.glow-text-left {
+  font-size: 2rem;
+  color: #fff;
+  animation: glowInLeft 3s ease-in-out;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  display: inline-block;
+  transform-origin: left;
+}
+
+@keyframes glowInLeft {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateX(-30px);
+    text-shadow: none;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05) translateX(0);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff;
+  }
 }
 
 .glow span {
