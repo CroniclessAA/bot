@@ -4,10 +4,11 @@
 --acsentColor: #17d1d3;
 }
 
-body {
+html, body {
 background-color: var(--mainColor);
 min-height: 900px;
 display: flex;
+overflow-x: hidden;
 flex-direction: column;
 margin: 0;
 }
